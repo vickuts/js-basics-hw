@@ -9,7 +9,7 @@ if(hamburger >= 3 && fries >=1) {
 
 // 2
 const price1 = 1500;
-if(price1 > 1000 && price1 <= 1900) {
+if(price1 >= 1000 && price1 <= 1900) {
     console.log('Значення ціни знаходиться між 1000 та 1900 включно')
 } else {
     console.log('Значення ціни не знаходиться між 1000 та 1900 включно')
@@ -25,7 +25,7 @@ if(price2 < 1000 || price2 > 1900) {
 }
 // second variant
 const price3 = 1900;
-if(!(price3 > 1000 && price3 <= 1900)) {
+if(!(price3 >= 1000 && price3 <= 1900)) {
     console.log('Значення ціни не знаходиться між 1000 та 1900 включно')
 } else {
     console.log('Значення ціни знаходиться між 1000 та 1900 включно')
@@ -52,19 +52,19 @@ const num3 = 2;
 
 if(num1 < num2) {
     if(num2 < num3) {
-        console.log(`Середнє за значення число ${num2}`)       
+        console.log(`Середнє за значенням число ${num2}`)       
     } else if (num3 < num1) {
-        console.log(`Середнє за значення число ${num1}`)  
+        console.log(`Середнє за значенням число ${num1}`)  
     } else {
-        console.log(`Середнє за значення число ${num3}`) 
+        console.log(`Середнє за значенням число ${num3}`) 
     }
 } else {
     if(num2 > num3) {
-        console.log(`Середнє за значення число ${num2}`) 
+        console.log(`Середнє за значенням число ${num2}`) 
     } else if (num3 < num1) {
-        console.log(`Середнє за значення число ${num3}`) 
+        console.log(`Середнє за значенням число ${num3}`) 
     } else {
-        console.log(`Середнє за значення число ${num1}`) 
+        console.log(`Середнє за значенням число ${num1}`) 
     }
 }
 
@@ -88,10 +88,10 @@ switch(day) {
         break;  
     case 6:
         console.log('Субота')
-        break;  
+        break;
     case 7:
         console.log('Неділя')
-        break; 
+        break;
 }
 
 // 7
@@ -121,7 +121,7 @@ console.log(str.replace(/[aeiouy]/gi, ''))
 let val = 3002;
 let res = val / 1000;
 let resInt = Number.parseInt(res);
-if((resInt % 10 === 1) && (resInt % 100 != 11)) {
+if((resInt % 10 === 1) && (resInt % 100 !== 11)) {
     console.log(`${val} метрів це ${res} кілометр`)
 } else if((resInt % 10 === 2 || resInt % 10 === 3 || resInt % 10 === 4) && resInt % 100 !== 12 && resInt % 100 !== 13 && resInt % 100 !== 14) {
     console.log(`${val} метрів це ${res} кілометри`)
